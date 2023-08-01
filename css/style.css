@@ -3,6 +3,10 @@
     --secundary-grey: #c5c5c5;
 }
 
+* {
+    margin: 0;
+}
+
 .header-container {
     padding: 0;
     background-color: rgb(255, 255, 255);
@@ -43,8 +47,9 @@
 }
 
 .menu_svg {
+
     width: 40px;
-    height: 36px;
+    height: 38px;
     border-radius: 50%;
     display: inline-block;
 }
@@ -54,10 +59,12 @@
 }
 
 .menu_svg img{
-    width: 1.1em;
+    width: 1em;
     height: 1.1em;
     margin: 0px 10px 0px 10px;
 }
+
+
 
 .search-main {
     margin-right: 10px;
@@ -67,7 +74,7 @@
     border: rgb(75, 75, 75) 1px solid;
     border-radius: 150px;
     padding-left: 30px;
-    background-image: url('/img/search.png');
+    background-image: url('/img/search.svg');
     background-position: 5px center ; 
     background-repeat: no-repeat;
     background-size: 20px;
@@ -98,7 +105,7 @@
 
 .utilizador_icon img{
     padding: 1px;
-    margin-left: 5px;
+    margin-left: 9px;
     background-color: rgba(114, 116, 116, 0);
     border-radius: 50%;
     width: 36px;
@@ -108,4 +115,35 @@
 .sino {
     width: 10px;
     height: 10px;
+}
+
+
+ .open {
+    position: fixed;
+    left: -500px;
+    background-color: var(--primary-grey);
+    width: 250px;
+    height: 100%;
+    transition: 0.1s;
+}
+
+.open.active {
+    left: 0;
+}
+.item-menu {
+    margin: 20px;
+}
+
+.item-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.txt_link {
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #000000;
 }

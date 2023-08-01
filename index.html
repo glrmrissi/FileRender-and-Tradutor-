@@ -8,15 +8,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body class="back">
+    <div class="open">
+        <div class="menu_svg" id="open" onclick="show()">
+            <img src="img/x-lg.svg" width="70" alt="">
+        </div>
+        <nav class="navigation_open">
+            <ul>
+                <li class="item-menu"><a href="#">
+                    <img src="img/house.svg" width="24" srcset="">
+                    <span class="txt_link">Home</span>
+                </a></li>
+                <li class="item-menu"><a href="#">
+                    <img src="img/three-dots.svg" width="24" srcset="">
+                    <span class="txt_link">More</span>
+                </a></li>
+                <li class="item-menu"><a href="#">
+                    <span class="icon"></span>
+                    <span class="txt_link"></span>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header-container container-fluid">
         <div class="sub-container row col-12">
             <nav class="navigation">
                 <div class="row">
-                    <div class="col flex-center">
-                        <div class="menu_svg">
-                            <img src="img/icons8-menu-50.png" alt="">
+                    <div class="col flex-center" >
+                        <div class="menu_svg" id="open" onclick="show()">
+                            <img src="img/icons8-menu-50.png" width="20p" alt="">
                         </div>
-                        <a href="#">Logo 1</a>
                     </div>
                     <div class="col div flex-center">
                         <input type="search" name="pesquisa" id="" class="search-main" placeholder="digite">
@@ -25,14 +45,14 @@
                         </div>
                     </div>
                     <div class="col utilizador_icon">
-                        <img src="img/notification_icon_241069.png" alt="" class="sino">
-                        <img src="img/do-utilizador.png" alt="" class="">
+                        <img src="img/bell.svg" alt="" class="sino">
+                        <img src="img/person-circle.svg" alt="" class="">
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
