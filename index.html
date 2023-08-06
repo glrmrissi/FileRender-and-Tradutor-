@@ -20,8 +20,12 @@
                         <span data-translate="home" class="txt_link active-lang" >Home</span>
                     </a></li>
                     <li class="item-menu"><a href="#">
-                        <span class="icon"><img src="img/bookmark.svg" alt="" width="22"></span>
+                        <span class="icon"><img src="img/bookmark.svg" alt="" width="24"></span>
                         <span data-translate="learn"  class="txt_link">Learning</span>
+                    </a></li>
+                    <li class="item-menu"><a href="#">
+                        <img src="img/moon.svg" width="24" srcset="">
+                        <span data-translate="more"  class="txt_link">Theme</span>
                     </a></li>
                     <li class="item-menu"><a href="#">
                         <img src="img/three-dots.svg" width="24" srcset="">
@@ -61,9 +65,7 @@
                             </div>
                         </div>
                     </div>
-    
                     <div class="col utilizador_icon">
-                        
                         <img src="img/bell.svg" alt="" class="sino" width="24">
                         <img src="img/person-circle.svg" alt="" class="" width="24">
                     </div>
@@ -74,22 +76,14 @@
 
     <section class="section-container">
         <div class="videos">
-            <div class="buttons_videos">
-                <video class="video_play"  width="20%" controls>
-                    <source src="videos/Download (7).mp4" type="video/mp4">
-                </video>
-            </div>
+            <form id="imageForm">
+                <label for="imageInput">Selecione uma imagem: </label>
+                <input type="file" id="imageInput" accept="image/*">
+                <input type="text" id="imageTitle" placeholder="Digite o título da imagem">
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
-    <section class="section-container">
-        <div class="videos">
-            <div class="buttons_videos">
-                <video class="video_play"  width="20%" controls>
-                    <source src="videos/Download (5).mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </section> 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
