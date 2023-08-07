@@ -233,3 +233,12 @@
     color: #fff;
     height: 100px;
 }
+
+#imageForm {
+    display: flex;
+}
+
+#gallery img{
+    width: 200px;
+    height: 100%;
+}

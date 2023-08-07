@@ -40,3 +40,38 @@ function changeLanguage(language) {
 document.getElementById('ptLang').addEventListener('click', () => changeLanguage('pt'));
 document.getElementById('jaLang').addEventListener('click', () => changeLanguage('ja'));
 document.getElementById('usaLang').addEventListener('click', () => changeLanguage('en'));
+
+
+const imageForm = document.getElementById('imageForm');
+const gallery = document.getElementById('gallery');
+
+imageForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const imageInput = document.getElementById('imageInput');
+    const imageTitle = document.getElementById('imageTitle').value;
+    const file = imageInput.files[0];
+    
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function () {
+            const image = document.createElement('img');
+            image.src = reader.result;
+            image.alt = imageTitle;
+
+            const title = document.createElement('h3');
+            title.textContent = imageTitle;
+
+            const imageCard = document.createElement('div');
+            imageCard.classList.add('image-card');
+            imageCard.appendChild(image);
+            imageCard.appendChild(title);
+            imageCard.style.display = "inline-block"
+
+            gallery.appendChild(imageCard);
+        }
+
+        reader.readAsDataURL(file);
+        imageForm.reset();
+    }
+});
