@@ -14,16 +14,19 @@ const translate = {
   pt: {
     home: "Inicio", 
     learn: "Lendo",
+    theme: "Tema",
     more: "Mais"
   }, 
   ja: {
     home: "ホーム", 
     learn: "ラーニング",
+    theme: "テーマ",
     more: "モア"
   },
   en: {
     home: "Home", 
     learn: "Learning",
+    theme: "Theme",
     more: "More"
   }
 }
