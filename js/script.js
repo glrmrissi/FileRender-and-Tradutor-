@@ -1,7 +1,8 @@
 let showOpen2 = document.querySelector('.open')
+let openTheme = document.querySelector('.theme-open')
 
 function show() {
-  showOpen2.classList.toggle('active')
+  showOpen2.classList.toggle('acti')
 }
 
 let flagOpen = document.querySelector(".flag_open")
@@ -55,26 +56,32 @@ imageForm.addEventListener('submit', function (event) {
     const file = imageInput.files[0];
     
     if (file) {
-        const reader = new FileReader();
+        const reader = new FileReader()
 
         reader.onload = function () {
-            const image = document.createElement('img');
-            image.src = reader.result;
-            image.alt = imageTitle;
+            const image = document.createElement('img')
+            image.src = reader.result
+            image.alt = imageTitle
 
-            const title = document.createElement('h3');
-            title.textContent = imageTitle;
+            const title = document.createElement('h3')
+            title.textContent = imageTitle
+            title.style.color = "#fff"
 
-            const imageCard = document.createElement('div');
-            imageCard.classList.add('image-card');
-            imageCard.appendChild(image);
-            imageCard.appendChild(title);
+            const imageCard = document.createElement('div')
+            imageCard.classList.add('image-card')
+            imageCard.appendChild(image)
+            imageCard.appendChild(title)
             imageCard.style.display = "inline-block"
 
-            gallery.appendChild(imageCard);
+            gallery.appendChild(imageCard)
         }
 
-        reader.readAsDataURL(file);
-        imageForm.reset();
+        reader.readAsDataURL(file)
+        imageForm.reset()
     }
 });
+
+
+function showTheme () {
+  openTheme.classList.toggle('act')
+}
